@@ -1,0 +1,12 @@
+name: test
+
+on: [issues]
+
+jobs:
+  client-build:
+    name: client-build-name
+    runs-on: [ubuntu-latest]
+    steps:
+    - uses: actions/checkout@v4
+    - name: install dependencies
+      run: npm ci
