@@ -1,6 +1,7 @@
 name: test
 
-on: [issues]
+on:
+  workflow_dispatch:
 
 jobs:
   client-build:
